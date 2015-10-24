@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Moving</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/Move/css/semantic.min.css"></link>
+<link rel="stylesheet" type="text/css" href="/Move/css/common.css"></link>
+<script src="/Move/js/angular.min.js"></script>
+<script src="/Move/js/inventory.js"></script>
+</head>
+<body>
+	<div th:replace="fragment/header :: simpleHeader">
+	</div>
+
+
+	<div class="main-view">
+		<div th:replace="fragment/steps :: stepHeader">
+		</div>
+		
+		<div class="full-inventory-main">
+			<div class="full-inventory-left">
+				
+			</div>
+		    
+		    <div class="full-inventory-right">
+		    	<div class="inventory-right-header">
+		    		<div class="ui large header">我的搬家计划</div>
+		    	</div>
+		    	
+		    	<div class="inventory-detail">
+		    		<div class="inventory-detail-total">
+		    			<div class="ui medium header">统计</div>
+		    		</div>
+		    		<div class="inventory-detail-total-sep">
+		    			<div>
+		    				<span>家具件数</span>
+		    				<span>10</span> 
+		    			</div>
+		    			
+		    			<div>
+		    				<span>纸箱件数</span>
+		    				<span>20</span>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="address-detail">
+		    		<div class="inventory-detail-total">
+		    			<div class="ui medium header">地址信息</div>
+		    		</div>
+		    		
+		    		<div class="address-general">
+		    			<div class="address-general-icon">
+		    				<span class="home icon"></span>
+		    			</div>
+		    			<div class="address-general-home">
+		    				<span>100</span>
+		    				<span>平方米</span>
+		    			</div>
+		    			
+		    			<div class="address-general-distance">
+		    				<span>8</span>
+		    				<span>公里</span>
+		    			</div>
+		    			
+		    		</div>
+		    		
+		    	</div>
+		    	
+		    </div>
+	    </div>
+	    
+	</div>
+
+</body>
+</html>

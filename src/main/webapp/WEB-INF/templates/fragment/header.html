@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Moving</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/Move/css/semantic.min.css"></link>
+<link rel="stylesheet" type="text/css" href="/Move/css/common.css"></link>
+</head>
+<body>
+	<div class="ui fixed inverted menu" th:fragment="header">
+		<div class="ui container">
+			<a href="/Move/message" class="header item">Moving</a>
+			<a href="http://semantic-ui.com/examples/fixed.html#" class="item">主页</a>
+			<a href="http://semantic-ui.com/examples/fixed.html#"
+				class="ui simple dropdown item"> 关于 </a> <a
+				href="http://semantic-ui.com/examples/fixed.html#" class="item">常见问题</a>
+		</div>
+
+		<div class="right menu">
+			
+				<a class="item" th:if="${user == null}" href="/Move/register">注册</a>
+				<div class="item" th:if="${user == null}">
+					<a class="ui primary  button" href="/Move/login">登录</a>
+				</div>
+
+				<a class="item" href="#" th:text="${user.userId}" th:if="${user != null}"></a>
+				<a class="item" href="/Move/logout" th:if="${user != null}">注销</a>
+
+		</div>
+	</div>
+	
+		<div class="ui fixed inverted menu" th:fragment="simpleHeader">
+		<div class="ui container">
+			<a href="/Move/message" class="header item">Moving</a>
+			<a href="http://semantic-ui.com/examples/fixed.html#" class="item">主页</a>
+			<a href="http://semantic-ui.com/examples/fixed.html#"
+				class="ui simple dropdown item"> 关于 </a> <a
+				href="http://semantic-ui.com/examples/fixed.html#" class="item">常见问题</a>
+		</div>
+
+	</div>
+
+</body>
+</html>

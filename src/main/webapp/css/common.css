@@ -1,0 +1,129 @@
+body {
+	margin-top:46px;
+}
+
+div.main{
+	
+}
+
+div.rightPanel{
+	position:fixed;
+	top:46px;
+	right:0px;
+	width: 450px;
+	bottom:0px;
+	background-color: #eee;
+    border-left: 1px solid #ddd;
+    padding: 40px 20px;
+}
+
+div.fields div.field{
+	width:100%;
+}
+
+div.formline{
+	margin-bottom:20px;
+}
+
+div.fullmain{
+	width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}
+
+div.full-inventory-main{
+	width:100%;
+	position:relative;
+}
+
+div.step-header{
+	border-bottom:1px solid #ddd;
+	text-align:center;
+}
+
+div.full-inventory-right{
+	position:fixed;
+	right:0px;
+	top:90px;
+	width:400px;
+	bottom:0px;
+	border-left: 1px solid #ddd;
+}
+
+div.inventory-right-header {
+	
+	padding:16px ;
+}
+
+div.inventory-detail{
+	margin-bottom:16px;
+	padding:0px 16px;
+}
+
+div.address-detail{
+	padding-top:16px;
+	border-top:1px solid #ddd;
+	padding:16px;
+}
+
+div.margin-left{
+	margin-left: 8px;
+}
+
+.progress-wizard .steps .step.active.current, .progress-wizard .steps .step.active:hover, .progress-wizard .steps .step.completed.current, .progress-wizard .steps .step.completed:hover {
+    color: #21c17f;
+}
+.progress-wizard .steps .step.active, .progress-wizard .steps .step.completed {
+    color: #042b3b;
+    cursor: pointer;
+}
+.progress-wizard .steps .step {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0 8px 0 0;
+    color: #929ca1;
+    font-size: 14px;
+    line-height: 43px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.progress-wizard .steps {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+ul {
+    list-style: none;
+}
+
+.progress-wizard .steps .step.active:before {
+    background-color: #21c17f;
+    color: #fff;
+}
+.progress-wizard .steps .step.active:before, .progress-wizard .steps .step.completed:before {
+    border-color: #21c17f;
+}
+.progress-wizard .steps .step:before {
+    content: attr(data-index);
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 1px solid #929ca1;
+    text-align: center;
+    text-indent: -1px;
+    line-height: 26px;
+    margin-right: 8px;
+}
+
+.progress-wizard .steps .step:not(:last-child):after {
+    content: ">";
+    line-height: 26px;
+    margin-left: 8px;
+    font-size: 7px;
+    vertical-align: middle;
+}
