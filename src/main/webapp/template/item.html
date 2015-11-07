@@ -1,15 +1,43 @@
-<div class="inventory-item">
-	<div class="inventory-image"></div>
+<div class="inventory-list" >
+	<div class="inventory-group" ng-repeat="group in groups ">
+		<div class="inventory-group-header" >
+		  {{group.name}}
+		</div>
 	
-	<div class="inventory-name">
-		{{item.name}}
+		<div class="inventory-item" ng-repeat="item in group.list">
+			<div class="inventory-add" >
+				<div class="ui mini green label" ng-if="item.count > 0">已添加</div>
+			</div>
+			
+			<div class="inventory-image">
+				
+			</div>
+			
+			<div class="inventory-name">
+				<div class="inventory-name-title">
+					{{item.name}}
+				</div>
+				<div class="inventory-name-desc">
+					{{item.desc}}
+				</div>
+				
+			</div>
+			
+			<div class="inventory-cnt">
+				<div class="inventory-cnt-ctrl">
+					<div class="basic ui mini buttons">
+						<button class=" ui button" ng-click="minusCount(item)" >-</button>
+					  <button class="ui button" ng-click="addCount(item)" >+</button>
+					</div>
+				</div>
+				
+				<div class="inventory-cnt-real">
+				{{item.count}}件
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
 	</div>
-	
-	<div class="inventory-cnt">
-	
-		<span class="inventory-cnt-real">
-		{{item.count}}
-		</span>
-	</div>
+
 </div>
 

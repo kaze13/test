@@ -13,13 +13,22 @@
 	</div>
 
 
-	<div class="main-view">
+	<div class="main-view" ng-app="inventoryApp">
 		<div th:replace="fragment/steps :: stepHeader">
 		</div>
 		
-		<div class="full-inventory-main">
+		<div class="full-inventory-main" ng-controller="inventoryCtrl">
 			<div class="full-inventory-left">
-				
+				<div class="full-inventory-left-inner">
+					<div class="full-inventory-left-inner-left">
+						<inventory-filter></inventory-filter>
+					</div>
+					
+					<div class="full-inventory-left-inner-right">
+						<inventory-list></inventory-list>
+					</div>
+					
+				</div>
 			</div>
 		    
 		    <div class="full-inventory-right">

@@ -1,0 +1,14 @@
+<div class="inventory-filter">
+
+
+
+	<div class="filter-items">
+	  <div class="filter-button">
+	  	<button class="ui blue button">我已的家具     <span class="filter-all">{{count}}件</span></button>
+	  </div>
+	
+	  <div class="filter-item " ng-class="selected: all"  ng-click="selectMenu(-1)">所有分类</div>
+	
+	  <div class="filter-item" ng-repeat="item in items" ng-class="selected: item.select" ng-click="selectMenu(item.index)">{{item.name}}</div>
+	</div>
+</div>

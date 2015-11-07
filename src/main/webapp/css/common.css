@@ -1,5 +1,5 @@
 body {
-	margin-top:46px;
+	padding-top:46px;
 }
 
 div.main{
@@ -40,13 +40,44 @@ div.full-inventory-main{
 div.step-header{
 	border-bottom:1px solid #ddd;
 	text-align:center;
+	position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: -5px;
+}
+
+div.full-inventory-left{
+    position: fixed;
+    left: -0;
+    right: 0;
+    top: 84px;
+    bottom: 0px;
+}
+
+div.full-inventory-left-inner{
+	height: 100%;
+}
+
+div.full-inventory-left-inner-left {
+	position: absolute;
+    width: 214px;
+}
+
+div.full-inventory-left-inner-right {
+	margin-left: 215px;
+    border-left: 1px solid #ddd;
+        height: 100%;
+        overflow-y:auto;
 }
 
 div.full-inventory-right{
+	display:none;
 	position:fixed;
 	right:0px;
-	top:90px;
-	width:400px;
+	top:85px;
+	width:320px;
 	bottom:0px;
 	border-left: 1px solid #ddd;
 }
@@ -69,6 +100,18 @@ div.address-detail{
 
 div.margin-left{
 	margin-left: 8px;
+}
+
+div.inventory-list{
+	clear:both;
+}
+
+div.inventory-item {
+	float:left;
+	width:240px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding:8px;
 }
 
 .progress-wizard .steps .step.active.current, .progress-wizard .steps .step.active:hover, .progress-wizard .steps .step.completed.current, .progress-wizard .steps .step.completed:hover {
@@ -120,10 +163,67 @@ ul {
     margin-right: 8px;
 }
 
+.invisible{
+	visibility:hidden;
+}
+
+div.inventory-add{
+	height:24px;
+}
+
 .progress-wizard .steps .step:not(:last-child):after {
     content: ">";
     line-height: 26px;
     margin-left: 8px;
     font-size: 7px;
     vertical-align: middle;
+}
+div.inventory-group{
+	clear:both;
+}
+
+div.inventory-group-header{
+	padding:4px 8px;
+	border-bottom:1px solid #ddd;
+	background-color:#eee;
+}
+
+div.inventory-cnt{
+	clear:both;
+}
+div.inventory-cnt-ctrl{
+	float:left;
+}
+div.inventory-cnt-real{
+	float:right;
+	margin:4px;
+}
+div.inventory-name-title{
+	font-size:1.2rem;
+}
+div.inventory-name-desc {
+	font-size:0.8rem;
+	color:#aaa;
+}
+div.clearfix {
+	clear:both;
+}
+div.filter-item {
+	cursor:pointer;
+	padding:8px 16px;
+}
+div.filter-item:hover {
+	background-color:#eee;
+}
+div.filter-item.selected{
+	background-color:#eee;
+}
+
+div.filter-button{
+	text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.filter-all{
+	margin-left:8px;
 }
